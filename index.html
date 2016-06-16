@@ -11,6 +11,7 @@
 	</head>
 	<body>
 		<div id = container>
+			<div id = "city"></div>
 			<div id = "weather"></div>
 			<div id = "temp"></div>
 			<div id = "date"></div>
@@ -18,7 +19,7 @@
 			<div><button id = "update">Update</button></div>
 			
 			
-			<div class="icon sun-shower">
+			<div id = "mixed" class="icon sun-shower hide">
   				<div class="cloud"></div>
   				<div class="sun">
     				<div class="rays"></div>
@@ -26,7 +27,7 @@
   				<div class="rain"></div>
 			</div>
 
-			<div class="icon thunder-storm">
+			<div id = "stormy" class="icon thunder-storm hide">
   				<div class="cloud"></div>
   				<div class="lightning">
     				<div class="bolt"></div>
@@ -34,12 +35,12 @@
   				</div>
 			</div>
 
-			<div class="icon cloudy">
+			<div id = "cloudy" class="icon cloudy hide">
   				<div class="cloud"></div>
   				<div class="cloud"></div>
 			</div>
 
-			<div class="icon flurries">
+			<div id = "snowy" class="icon flurries hide">
   				<div class="cloud"></div>
   				<div class="snow">
     				<div class="flake"></div>
@@ -47,16 +48,18 @@
   				</div>
 			</div>
 
-			<div class="icon sunny">
+			<div id = "sunny" class="icon sunny hide">
   				<div class="sun">
     				<div class="rays"></div>
   				</div>
 			</div>
 
-			<div class="icon rainy">
+			<div id = "rainy" class="icon rainy hide">
   				<div class="cloud"></div>
   				<div class="rain"></div>
 			</div>
+
+			<p id = "credit">By <a href="https://www.freecodecamp.com/nicholasfraleigh" target="_blank">Nicholas Fraleigh</a><br>Inspired By <a href="http://codepen.io/joshbader/full/EjXgqr/" target="_blank">joshbader</a></p>
 		</div>
 	</body>
 	<footer></footer>

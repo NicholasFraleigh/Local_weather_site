@@ -4,20 +4,43 @@ html *:before,
 html *:after { box-sizing: inherit; }
 
 #container{
-	width: 300px;
+	width: 250px;
 	margin: auto;
+	border: 2px;
+	border-color: white;
+	background-color: currentColor;
+	box-shadow: 4px 4px 5px 2px #333333;
+	border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
 }
 
-#button{
+#convert,
+#update{
 	display: inline-block;
 	vertical-align: middle;
+	background-color: #747D7D;
+	border-radius: 0.5em;
+	color:white;
+	margin: 0.3em;
+	padding:0.2em;
+}
+
+#city {
+	font-size:2em;
+	padding: 0.5em;
 }
 
 #weather,
 #temp,
 #date,
-#scale {
+#scale,
+#city {
 	color: white;
+}
+
+#credit{
+	padding: 0.5em;
 }
 
 body {
@@ -27,7 +50,7 @@ body {
   color: #161616;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: currentColor;
+  background-color: #747D7D;
 }
 
 h1 {
@@ -52,6 +75,10 @@ p { margin: 1.375rem 0; }
   font-size: 1em; /* control icon size here */
 }
 
+.hide {
+	display: none;
+}
+
 .cloud {
   position: absolute;
   z-index: 1;
@@ -69,6 +96,7 @@ p { margin: 1.375rem 0; }
     -2.1875em 0.6875em 0 -0.3125em #fff,
     2.0625em 0.9375em 0 -0.5625em #fff;
 }
+
 .cloud:after {
   content: '';
   position: absolute;
